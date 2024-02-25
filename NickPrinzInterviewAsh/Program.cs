@@ -7,6 +7,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+//builder.Services.AddScoped<IQuery<GetAllWorkers, IEnumerable<Worker>>, GetAllWorkersApplicationQuery>();
+//1 sample dependency injection setup here. either define more or setup automatic containers(preferred)
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
